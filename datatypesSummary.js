@@ -31,7 +31,13 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello world");
 }
-
+const add = function(a,b){
+    c = a+b
+    console.log(c);
+    
+}
+myFunction();
+add(1,2);
 console.log(typeof anotherId);
 console.log(typeof myFunction);
 console.log(typeof heros);
