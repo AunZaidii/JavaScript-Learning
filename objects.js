@@ -14,8 +14,6 @@ console.log(myObj.location);
 console.log(myObj.email);
 console.log(myObj.IsMale);
 console.log(myObj.mySym);
-
-
 console.log(mySym);
 
 
