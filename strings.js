@@ -33,3 +33,7 @@ console.log(url.replace('%20', '-'))
 console.log(url.includes('sundar'))
 
 console.log(gameName.split('-'));
+
+let names = "aun";
+let age = 22;
+console.log(`my name is ${names} and my age is ${age}`);
