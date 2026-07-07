@@ -85,3 +85,36 @@ function loginMessage (username = "user"){
 
 console.log(loginMessage("aa"));
 
+function cartPrice(...price){
+    return price;
+}
+console.log(cartPrice(100,200,399,356,346,22,6,4,7,44,57,4,6,3,6,6,3,5,7,3,6,3,6,234));
+
+var arr1 = [1,2,3,4];
+var arr2 = [5,6,7,8];
+var arr = [...arr1,...arr2];
+// console.log(arr);
+
+var user = {
+    name: "Aun",
+    price: 200
+};
+
+function obj(anyobj){
+    console.log(`the name is ${anyobj.name} and the price is ${anyobj.price}`);
+}
+
+obj(user);
+
+obj({
+    name:"Ali",
+    price: 233
+})
+
+var newArr = [1,2,3,4,5];
+
+function getSecondValue(getArr){
+    return getArr[1];
+}
+
+console.log(getSecondValue(newArr));
