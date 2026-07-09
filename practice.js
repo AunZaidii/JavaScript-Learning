@@ -1,162 +1,162 @@
-// // let myArray = [1,2,3,4,5];
-// // console.log(myArray);
-// // console.log(myArray[0]);
-// // console.log(typeof(myArray));
+let myArray = [1,2,3,4,5];
+console.log(myArray);
+console.log(myArray[0]);
+console.log(typeof(myArray));
 
 
-// // let myObj = {
-// //     name: "Aun",
-// //     age: 22,
-// //     rollNo: "SE-23095",
-// // };
-// // console.log(myObj.name);
-// // console.log(myObj);
+let myObj = {
+    name: "Aun",
+    age: 22,
+    rollNo: "SE-23095",
+};
+console.log(myObj.name);
+console.log(myObj);
 
 
-// // let myFunction = function(){
-// //     console.log("Aun Zaidi");
+let myFunction = function(){
+    console.log("Aun Zaidi");
     
-// // }
-// // myFunction();
+}
+myFunction();
 
-// // console.log(myArray.unshift(4));
-// // console.log(myArray.shift);
+console.log(myArray.unshift(4));
+console.log(myArray.shift);
 
-// // console.log(myArray);
+console.log(myArray);
 
-// var id = Symbol("id")
-// var myObj = {
-//     [id]: 101,
-//     name: "Aun",
-//     age: 22,
-//     LoggedIn: true,
-//     email: "aunzaidi@gmail.com",
-// };
+var id = Symbol("id")
+var myObj = {
+    [id]: 101,
+    name: "Aun",
+    age: 22,
+    LoggedIn: true,
+    email: "aunzaidi@gmail.com",
+};
 
-// var myObjs = {
-//     [id]: 101,
-//     name: "Aunzee",
-//     age: 22,
-//     LoggedIn: true,
-//     email: "aunzaidi@gmail.com",
-// };
-
-
-// // console.log(myObj.age);
-// // // console.log(myObj[age]);
-// // console.log(myObj["age"]);
-// // console.log(myObj[id]);
-// // // console.log(typeof mysym);
-// // console.log(myObjs[id]);
+var myObjs = {
+    [id]: 101,
+    name: "Aunzee",
+    age: 22,
+    LoggedIn: true,
+    email: "aunzaidi@gmail.com",
+};
 
 
-// myObj.greeting = function(){
-//     console.log(`hello ${myObjs.name}`);
+console.log(myObj.age);
+console.log(myObj[age]);
+console.log(myObj["age"]);
+console.log(myObj[id]);
+console.log(typeof mysym);
+console.log(myObjs[id]);
+
+
+myObj.greeting = function(){
+    console.log(`hello ${myObjs.name}`);
     
-// }
+}
 
-// // myObj.greeting();
+myObj.greeting();
 
-// var course = {
-//     coursename: "JavaScript",
-//     courseprice: "1200rs",
-//     courseteacher: "Hitesh"
-// }
+var course = {
+    coursename: "JavaScript",
+    courseprice: "1200rs",
+    courseteacher: "Hitesh"
+}
 
-// var {coursename:names} = course;
-// var {courseprice:price} = course;
-// var {courseteacher:teacher} = course;
+var {coursename:names} = course;
+var {courseprice:price} = course;
+var {courseteacher:teacher} = course;
 
-// // console.log(teacher);
-// // console.log(names);
-// // console.log(price);
+console.log(teacher);
+console.log(names);
+console.log(price);
 
-// // ;
-// // function add(a,b){
-// //     console.log(a+b);
-// // };
+;
+function add(a,b){
+    console.log(a+b);
+};
 
-// // add(2,3);
+add(2,3);
 
-// function loginMessage (username = "user"){
-//     return `${username} just logged in!`;
+function loginMessage (username = "user"){
+    return `${username} just logged in!`;
     
-// };
+};
 
-// console.log(loginMessage("aa"));
+console.log(loginMessage("aa"));
 
-// function cartPrice(...price){
-//     return price;
-// }
-// console.log(cartPrice(100,200,399,356,346,22,6,4,7,44,57,4,6,3,6,6,3,5,7,3,6,3,6,234));
+function cartPrice(...price){
+    return price;
+}
+console.log(cartPrice(100,200,399,356,346,22,6,4,7,44,57,4,6,3,6,6,3,5,7,3,6,3,6,234));
 
-// var arr1 = [1,2,3,4];
-// var arr2 = [5,6,7,8];
-// var arr = [...arr1,...arr2];
-// // console.log(arr);
+var arr1 = [1,2,3,4];
+var arr2 = [5,6,7,8];
+var arr = [...arr1,...arr2];
+// console.log(arr);
 
-// var user = {
-//     name: "Aun",
-//     price: 200
-// };
+var user = {
+    name: "Aun",
+    price: 200
+};
 
-// function obj(anyobj){
-//     console.log(`the name is ${anyobj.name} and the price is ${anyobj.price}`);
-// }
+function obj(anyobj){
+    console.log(`the name is ${anyobj.name} and the price is ${anyobj.price}`);
+}
 
-// obj(user);
+obj(user);
 
-// obj({
-//     name:"Ali",
-//     price: 233
-// })
+obj({
+    name:"Ali",
+    price: 233
+})
 
-// var newArr = [1,2,3,4,5];
+var newArr = [1,2,3,4,5];
 
-// function getSecondValue(getArr){
-//     return getArr[1];
-// }
+function getSecondValue(getArr){
+    return getArr[1];
+}
 
-// console.log(getSecondValue(newArr));
+console.log(getSecondValue(newArr));
 
 
-// const myobj = {
-//     name: "Aun",
-//     price: 440,
+const myobj = {
+    name: "Aun",
+    price: 440,
     
-//     welcomeMessage: function(){
-//         console.log(`${this.name} and ${this.price}`);  
-//     }
-// }
+    welcomeMessage: function(){
+        console.log(`${this.name} and ${this.price}`);  
+    }
+}
 
-// myobj.welcomeMessage();
-// console.log(this);
+myobj.welcomeMessage();
+console.log(this);
 
 
-// const arrow1 = function(){
-//     let a = "aun";
-//     console.log(this.a);
+const arrow1 = function(){
+    let a = "aun";
+    console.log(this.a);
     
-// }
+}
 
-// const arrow2 = () => {
-//     let a = "zaidi";
-//     console.log(this.a);
-// }
+const arrow2 = () => {
+    let a = "zaidi";
+    console.log(this.a);
+}
 
-// arrow1();
-// arrow2();
+arrow1();
+arrow2();
 
 
 
-// (function add(num1, num2){
-//     console.log(num1+num2);
-// }
-// )(1,2);
+(function add(num1, num2){
+    console.log(num1+num2);
+}
+)(1,2);
 
-// ((num1,num2) => {
-//     console.log(num1+num2);   
-// })(1,2);
+((num1,num2) => {
+    console.log(num1+num2);   
+})(1,2);
 
 
 
@@ -166,3 +166,78 @@ for (let i = 0; i < arr1.length; i++) {
     const element = arr1[i];
     console.log(element);
 }
+
+let arr2 = [1,2,3,4,5,6,7,8,9];
+
+for (const element of arr2) {
+    // console.log(element);
+    
+}
+
+const map = new Map;
+map.set("Pakistan","Rupee");
+map.set("Europe","Euro");
+map.set("Bangladesh","Taka");
+map.set("USA","USD");
+
+console.log(map);
+
+for (const [key,value] of map) {
+    console.log(key,"==", value);
+    
+}
+
+const books = [
+  {
+    title: 'Book One',
+    genre: 'Fiction',
+    publish: 1981,
+    edition: 2004
+  },
+  {
+    title: 'Book Two',
+    genre: 'Non-Fiction',
+    publish: 1992,
+    edition: 2008
+  },
+  {
+    title: 'Book Three',
+    genre: 'History',
+    publish: 1999,
+    edition: 2007
+  },
+  {
+    title: 'Book Four',
+    genre: 'Non-Fiction',
+    publish: 1989,
+    edition: 2010
+  },
+  {
+    title: 'Book Five',
+    genre: 'Science',
+    publish: 2009,
+    edition: 2014
+  },
+  {
+    title: 'Book Six',
+    genre: 'Fiction',
+    publish: 1987,
+    edition: 2010
+  },
+  {
+    title: 'Book Seven',
+    genre: 'History',
+    publish: 1986,
+    edition: 1996
+  }
+];
+
+const history = books.filter((bk) => bk.publish > 2000 && bk.edition > 2010);
+console.log(history);
+
+let myarr = [1,2,3,4,5]
+
+const MyNums = myarr.reduce(function nums (acc, curval){
+    return acc+curval
+},0)
+console.log(MyNums);
