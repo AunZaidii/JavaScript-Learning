@@ -149,12 +149,20 @@
 
 
 
-(function add(num1, num2){
-    console.log(num1+num2);
+// (function add(num1, num2){
+//     console.log(num1+num2);
+// }
+// )(1,2);
+
+// ((num1,num2) => {
+//     console.log(num1+num2);   
+// })(1,2);
+
+
+
+let arr1 = [1,2,3,4,5,6,7,8];
+
+for (let i = 0; i < arr1.length; i++) {
+    const element = arr1[i];
+    console.log(element);
 }
-)(1,2);
-
-((num1,num2) => {
-    console.log(num1+num2);   
-})(1,2);
-
