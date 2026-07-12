@@ -51,17 +51,28 @@
 // console.log(first.parentElement.innerText);
 
 
-const element = document.createElement("div")
-console.log(element);
-element.className = "aun"
-element.id = Math.round(Math.random() * 10 + 1)
-element.setAttribute("title","tt")
-element.style.backgroundColor = "green"
-element.style.padding = "12px"
+// const element = document.createElement("div")
+// console.log(element);
+// element.className = "aun"
+// element.id = Math.round(Math.random() * 10 + 1)
+// element.setAttribute("title","tt")
+// element.style.backgroundColor = "green"
+// element.style.padding = "12px"
 
-const add = document.createTextNode("Aun Zaidi")
-element.appendChild(add)
-document.body.appendChild(element)
+// const add = document.createTextNode("Aun Zaidi")
+// element.appendChild(add)
+// document.body.appendChild(element)
+
+const add = document.createElement("div")
+console.log(add);
+add.className = "divv"
+add.id = 2
+add.setAttribute("title","div-title")
+add.style.color = "green"
+const name = document.createTextNode('Aun Zaidi')
+add.appendChild(name)
+document.body.appendChild(add)
+
 </script>
 
 </html> 
