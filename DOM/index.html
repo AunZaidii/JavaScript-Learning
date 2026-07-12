@@ -50,6 +50,18 @@
 // const first = document.querySelector(".days");
 // console.log(first.parentElement.innerText);
 
+
+const element = document.createElement("div")
+console.log(element);
+element.className = "aun"
+element.id = Math.round(Math.random() * 10 + 1)
+element.setAttribute("title","tt")
+element.style.backgroundColor = "green"
+element.style.padding = "12px"
+
+const add = document.createTextNode("Aun Zaidi")
+element.appendChild(add)
+document.body.appendChild(element)
 </script>
 
 </html> 
