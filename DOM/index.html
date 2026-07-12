@@ -17,7 +17,7 @@
         </ul>
     </div> -->
 
-    <div class="parent">
+    <!-- <div class="parent">
         <div class="days">Monday</div>
         <div class="days">Tuesday</div>
         <div class="days">Wednesday</div>
@@ -25,11 +25,41 @@
         <div class="days">Friday</div>
         <div class="days">Saturday</div>
         <div class="days">Sunday</div>
-    </div>
+    </div> -->
 
+    <ul class="langName">
+        <li>Javascript</li>
+    </ul>
 </body>
 
 <script>
+
+function addlang (lang) {
+    
+    const add = document.createElement("li")
+    add.innerHTML = `${lang}`
+    document.querySelector(".langName").appendChild(add)
+}
+
+addlang("python")
+addlang("Java")
+addlang("C++")
+
+
+
+
+
+
+
+
+
+
+// function addlang (lang){
+//     const li = document.createElement("li");
+//     li.innerHTML = `${lang}`
+//     document.querySelector(".langName").appendChild(li)
+// }
+// addlang("g")
 
 // const parent = document.querySelector('.parent');
 // console.log(parent);
@@ -63,15 +93,15 @@
 // element.appendChild(add)
 // document.body.appendChild(element)
 
-const add = document.createElement("div")
-console.log(add);
-add.className = "divv"
-add.id = 2
-add.setAttribute("title","div-title")
-add.style.color = "green"
-const name = document.createTextNode('Aun Zaidi')
-add.appendChild(name)
-document.body.appendChild(add)
+// const add = document.createElement("div")
+// console.log(add);
+// add.className = "divv"
+// add.id = 2
+// add.setAttribute("title","div-title")
+// add.style.color = "green"
+// const name = document.createTextNode('Aun Zaidi')
+// add.appendChild(name)
+// document.body.appendChild(add)
 
 </script>
 
