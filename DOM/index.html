@@ -46,14 +46,24 @@ addlang("Java")
 addlang("C++")
 
 
+function optlang (addlang){
+    const add = document.createElement('li')
+    add.appendChild(document.createTextNode(addlang))
+    document.querySelector('.langName').appendChild(add)
+}
+optlang("dd")
 
 
+const second = document.querySelector("li:nth-child(2)")
+const newli = document.createElement("li")
+newli.innerHTML = "Typescript"
+second.replaceWith(newli)
 
+const first = document.querySelector("li:first-child")
+first.innerHTML = "C#"
 
-
-
-
-
+const last = document.querySelector("li:last-child")
+last.remove()
 // function addlang (lang){
 //     const li = document.createElement("li");
 //     li.innerHTML = `${lang}`
