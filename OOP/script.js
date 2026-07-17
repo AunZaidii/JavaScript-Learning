@@ -21,23 +21,43 @@
 // console.log(userTwo);
 
 
-const users = {
-   totalUsers : []
+// const users = {
+//    totalUsers : []
+// }
+
+// function user(userId, username, userAge){
+//     this.userId = userId;
+//     this.username = username;
+//     this.userAge = userAge;
+// }
+
+// function addUsers(userId, username, userAge){
+//     const newUser = new user(userId, username, userAge)
+//     users.totalUsers.push(newUser)
+
+// }
+// addUsers(1,'batool', true);
+// addUsers(2,'Aun', true);
+// addUsers(3,'Haris', true);
+
+// console.log(users.totalUsers);
+
+class user {
+    constructor(name, email, password){
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    encryption(){
+        return `${this.password}abc`
+    }
+    changeUsername(){
+        return `${this.name.toUpperCase()}`
+    }
 }
 
-function user(userId, username, userAge){
-    this.userId = userId;
-    this.username = username;
-    this.userAge = userAge;
-}
+const user1 = new user('aun', 'aun@gmail.com', 123)
+console.log(user1.encryption());
+console.log(user1.changeUsername());
 
-function addUsers(userId, username, userAge){
-    const newUser = new user(userId, username, userAge)
-    users.totalUsers.push(newUser)
-
-}
-addUsers(1,'batool', true);
-addUsers(2,'Aun', true);
-addUsers(3,'Haris', true);
-
-console.log(users.totalUsers);
