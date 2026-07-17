@@ -42,22 +42,55 @@
 
 // console.log(users.totalUsers);
 
+// class user {
+//     constructor(name, email, password){
+//         this.name = name;
+//         this.email = email;
+//         this.password = password;
+//     }
+
+//     encryption(){
+//         return `${this.password}abc`
+//     }
+//     changeUsername(){
+//         return `${this.name.toUpperCase()}`
+//     }
+// }
+
+// const user1 = new user('aun', 'aun@gmail.com', 123)
+// console.log(user1.encryption());
+// console.log(user1.changeUsername());
+
+
+
 class user {
-    constructor(name, email, password){
-        this.name = name;
+    constructor(username){
+        this.username = username
+    }
+    logMe(){
+        console.log(`hi ${this.username} you have been logged in`);
+        
+    }
+}
+
+class teacher extends user{
+    constructor(username, email, password){
+        super(username);
         this.email = email;
         this.password = password;
     }
 
-    encryption(){
-        return `${this.password}abc`
-    }
-    changeUsername(){
-        return `${this.name.toUpperCase()}`
+    isTeaching(){
+        console.log(`${this.username} is teaching`);
+        
     }
 }
+const u = new user('aun')
+const t = new teacher('aun', 'aun@gmail.com', 123)
+console.log(t);
+console.log(t.isTeaching());
+console.log(t.logMe());
+console.log(u);
+console.log(u.logMe());
 
-const user1 = new user('aun', 'aun@gmail.com', 123)
-console.log(user1.encryption());
-console.log(user1.changeUsername());
 
