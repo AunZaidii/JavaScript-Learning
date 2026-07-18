@@ -61,36 +61,12 @@
 // console.log(user1.encryption());
 // console.log(user1.changeUsername());
 
-
-
-class user {
-    constructor(username){
-        this.username = username
-    }
-    logMe(){
-        console.log(`hi ${this.username} you have been logged in`);
-        
+const myObj = {
+    pi : function(){
+        console.log(Math.PI);
     }
 }
+console.log(myObj.pi);
 
-class teacher extends user{
-    constructor(username, email, password){
-        super(username);
-        this.email = email;
-        this.password = password;
-    }
-
-    isTeaching(){
-        console.log(`${this.username} is teaching`);
-        
-    }
-}
-const u = new user('aun')
-const t = new teacher('aun', 'aun@gmail.com', 123)
-console.log(t);
-console.log(t.isTeaching());
-console.log(t.logMe());
-console.log(u);
-console.log(u.logMe());
 
 
